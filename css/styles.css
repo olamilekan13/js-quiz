@@ -38,4 +38,5 @@ h1,h2{
     background-color: hsl(250, 100%, 50%);
     font-weight: bold;
     padding: 5px;
+    visibility: hidden;
 }
