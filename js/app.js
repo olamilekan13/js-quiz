@@ -17,10 +17,19 @@ function start(){
 
 //function to check for ans
 function check(btnid){
-    for(i = 0, i <4 , i++){
+    for(i = 0; i<4 ; i++){
         if(document.forms[btnid].elements[i].checked){
             ans[btnid] = i;
         }
+    }
+
+    ansBlock = 'ansBlock + btnid';
+
+    if(ans[btnid] == correctAns[btnid]){
+        document.getElementById("headImg").src = "img/dice2.gif";
+        document.getElementById(ansBlock).style.visibility = "visible";
+        document.getElementById(ansBlock).innerHTML = "Correct!!!!"
+
     }
 
 }
