@@ -10,5 +10,17 @@ function start(){
     document.getElementById("msg").style.display ="none"
     document.getElementById("startBtn").style.display ="none"
     document.getElementById("headImg").src = "img/dice2.gif"
+    document.getElementById("qstn0").style.display="block"
+
+}
+
+
+//function to check for ans
+function check(btnid){
+    for(i = 0, i <4 , i++){
+        if(document.forms[btnid].elements[i].checked){
+            ans[btnid] = i;
+        }
+    }
 
 }
