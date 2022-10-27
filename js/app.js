@@ -1,7 +1,7 @@
 let score  = parseInt(0);
 let formNum = parseInt(0);
 let ansBlock;
-let correctAns = [1,1,1];
+let correctAns = [1,2,0];
 let ans = [];
 let ques;
 
@@ -29,6 +29,12 @@ function check(btnid){
         document.getElementById("headImg").src = "img/dice2.gif";
         document.getElementById(ansBlock).style.visibility = "visible";
         document.getElementById(ansBlock).innerHTML = "Correct!!!!"
+
+    }
+    else{
+
+        document.getElementById(ansBlock).style.visibility = "visible";
+        document.getElementById(ansBlock).innerHTML = "Wrong!!!!"
 
     }
 
